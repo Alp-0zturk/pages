@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>backend.commons.services package &mdash; Documentation-Settings-mainServer 1.0.0 documentation</title>
+      <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <!--[if lt IE 9]>
+    <script src="_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script src="_static/jquery.js"></script>
+        <script src="_static/_sphinx_javascript_frameworks_compat.js"></script>
+        <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+        <script src="_static/doctools.js"></script>
+        <script src="_static/sphinx_highlight.js"></script>
+    <script src="_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="index.html" class="icon icon-home">
+            Documentation-Settings-mainServer
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="modules.html">backend</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">Documentation-Settings-mainServer</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="index.html" class="icon icon-home" aria-label="Home"></a></li>
+      <li class="breadcrumb-item active">backend.commons.services package</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="_sources/backend.commons.services.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="backend-commons-services-package">
+<h1>backend.commons.services package<a class="headerlink" href="#backend-commons-services-package" title="Permalink to this heading"></a></h1>
+<section id="submodules">
+<h2>Submodules<a class="headerlink" href="#submodules" title="Permalink to this heading"></a></h2>
+</section>
+<section id="module-backend.commons.services.data_frame_helper">
+<span id="backend-commons-services-data-frame-helper-module"></span><h2>backend.commons.services.data_frame_helper module<a class="headerlink" href="#module-backend.commons.services.data_frame_helper" title="Permalink to this heading"></a></h2>
+<dl class="py class">
+<dt class="sig sig-object py" id="backend.commons.services.data_frame_helper.DataFrameHelper">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">backend.commons.services.data_frame_helper.</span></span><span class="sig-name descname"><span class="pre">DataFrameHelper</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">dataset_id</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">session_id</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">without_session</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">bool</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">datasource_id</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">connect_to_mongo</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">bool</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">hive</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">bool</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/backend/commons/services/data_frame_helper.html#DataFrameHelper"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#backend.commons.services.data_frame_helper.DataFrameHelper" title="Permalink to this definition"></a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<p>Class for centralizing the access on source data via a dataframe.</p>
+<dl class="py method">
+<dt class="sig sig-object py" id="backend.commons.services.data_frame_helper.DataFrameHelper.create_hive_database">
+<span class="sig-name descname"><span class="pre">create_hive_database</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/backend/commons/services/data_frame_helper.html#DataFrameHelper.create_hive_database"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#backend.commons.services.data_frame_helper.DataFrameHelper.create_hive_database" title="Permalink to this definition"></a></dt>
+<dd><p>Function for</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="backend.commons.services.data_frame_helper.DataFrameHelper.dataset">
+<span class="sig-name descname"><span class="pre">dataset</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">None</span></em><a class="headerlink" href="#backend.commons.services.data_frame_helper.DataFrameHelper.dataset" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="backend.commons.services.data_frame_helper.DataFrameHelper.dataset_id">
+<span class="sig-name descname"><span class="pre">dataset_id</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">None</span></em><a class="headerlink" href="#backend.commons.services.data_frame_helper.DataFrameHelper.dataset_id" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="backend.commons.services.data_frame_helper.DataFrameHelper.datasource">
+<span class="sig-name descname"><span class="pre">datasource</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">None</span></em><a class="headerlink" href="#backend.commons.services.data_frame_helper.DataFrameHelper.datasource" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="backend.commons.services.data_frame_helper.DataFrameHelper.extract_and_save_structured_or_semistructured">
+<span class="sig-name descname"><span class="pre">extract_and_save_structured_or_semistructured</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">df</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">DataFrame</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">None</span></span></span><a class="reference internal" href="_modules/backend/commons/services/data_frame_helper.html#DataFrameHelper.extract_and_save_structured_or_semistructured"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#backend.commons.services.data_frame_helper.DataFrameHelper.extract_and_save_structured_or_semistructured" title="Permalink to this definition"></a></dt>
+<dd><p>Function to classify the schema and start the extraction 
+for the schema of structured and semistructured data.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>df</strong> – the source data as dataframe.</p>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>None.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="backend.commons.services.data_frame_helper.DataFrameHelper.extract_and_save_unstructured">
+<span class="sig-name descname"><span class="pre">extract_and_save_unstructured</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">None</span></span></span><a class="reference internal" href="_modules/backend/commons/services/data_frame_helper.html#DataFrameHelper.extract_and_save_unstructured"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#backend.commons.services.data_frame_helper.DataFrameHelper.extract_and_save_unstructured" title="Permalink to this definition"></a></dt>
+<dd><p>Function for the schema and metadata extraction of unstructured data.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><p>None.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="backend.commons.services.data_frame_helper.DataFrameHelper.flatten">
+<em class="property"><span class="pre">static</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">flatten</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">df</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/backend/commons/services/data_frame_helper.html#DataFrameHelper.flatten"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#backend.commons.services.data_frame_helper.DataFrameHelper.flatten" title="Permalink to this definition"></a></dt>
+<dd><p>This functions is given by: <a class="reference external" href="https://gist.github.com/nmukerje/e65cde41be85470e4b8dfd9a2d6aed50">https://gist.github.com/nmukerje/e65cde41be85470e4b8dfd9a2d6aed50</a>
+Flattens a complex json/xml dataframe to tabular data
+:param df: pyspark dataframe object
+:return: pyspark dataframe object</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="backend.commons.services.data_frame_helper.DataFrameHelper.get_attribute_lineage">
+<span class="sig-name descname"><span class="pre">get_attribute_lineage</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">lineage</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">column_name</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/backend/commons/services/data_frame_helper.html#DataFrameHelper.get_attribute_lineage"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#backend.commons.services.data_frame_helper.DataFrameHelper.get_attribute_lineage" title="Permalink to this definition"></a></dt>
+<dd><p>Function for checking all lineage elements for a given attribute.
+:param lineage: a list of dicts {‘data’:data, ‘version’:version}.
+:param column_name: name of the column for the search.
+:return: list of attributes.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="backend.commons.services.data_frame_helper.DataFrameHelper.get_correct_rel">
+<span class="sig-name descname"><span class="pre">get_correct_rel</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">rels</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">version</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">is_profiling</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">bool</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/backend/commons/services/data_frame_helper.html#DataFrameHelper.get_correct_rel"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#backend.commons.services.data_frame_helper.DataFrameHelper.get_correct_rel" title="Permalink to this definition"></a></dt>
+<dd><p>Function to get the correct relationship. This function is required, because
+sometimes it happens, that a relationship is not correctly delivered, what is resulting in 
+wrong versioning.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>rels</strong> – all relationships between two nodes.</p></li>
+<li><p><strong>version</strong> – version of the relationship that is required.</p></li>
+<li><p><strong>is_profiling</strong> – <ul>
+<li></li>
+</ul>
+</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>None.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="backend.commons.services.data_frame_helper.DataFrameHelper.get_docker_ip">
+<span class="sig-name descname"><span class="pre">get_docker_ip</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">docker_name</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/backend/commons/services/data_frame_helper.html#DataFrameHelper.get_docker_ip"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#backend.commons.services.data_frame_helper.DataFrameHelper.get_docker_ip" title="Permalink to this definition"></a></dt>
+<dd><p>Function for</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="backend.commons.services.data_frame_helper.DataFrameHelper.get_file_lineage">
+<span class="sig-name descname"><span class="pre">get_file_lineage</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">lineage</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">filename</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">[&lt;class</span> <span class="pre">'str'&gt;]</span></span></span><a class="reference internal" href="_modules/backend/commons/services/data_frame_helper.html#DataFrameHelper.get_file_lineage"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#backend.commons.services.data_frame_helper.DataFrameHelper.get_file_lineage" title="Permalink to this definition"></a></dt>
+<dd><p>Function for checking all lineage elements for a given file.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>lineage</strong> – a list of dicts {‘data’:data, ‘version’:version}.</p></li>
+<li><p><strong>filename</strong> – name of the file for the search.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>list of attributes.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="backend.commons.services.data_frame_helper.DataFrameHelper.get_notebook_string">
+<span class="sig-name descname"><span class="pre">get_notebook_string</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">type</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">'JUPYTER'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">version</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">'LATEST'</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">str</span></span></span><a class="reference internal" href="_modules/backend/commons/services/data_frame_helper.html#DataFrameHelper.get_notebook_string"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#backend.commons.services.data_frame_helper.DataFrameHelper.get_notebook_string" title="Permalink to this definition"></a></dt>
+<dd><p>Function for getting the needed code as string for the notebooks.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>type</strong> – type of the notebook.</p></li>
+<li><p><strong>version</strong> – version of the data that should be loaded.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>the required code as string.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="backend.commons.services.data_frame_helper.DataFrameHelper.get_source_df">
+<span class="sig-name descname"><span class="pre">get_source_df</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">flattened</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">bool</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">version</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">DataFrame</span></span></span><a class="reference internal" href="_modules/backend/commons/services/data_frame_helper.html#DataFrameHelper.get_source_df"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#backend.commons.services.data_frame_helper.DataFrameHelper.get_source_df" title="Permalink to this definition"></a></dt>
+<dd><p>Function for loading the source data into a dataframe.
+:param flattened: defines whether the data should be flattened or not.
+:param version: version to load a specific version, if not given the latest revision is loaded.
+:return: dataframe.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="backend.commons.services.data_frame_helper.DataFrameHelper.get_workspace_id">
+<span class="sig-name descname"><span class="pre">get_workspace_id</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">str</span></span></span><a class="reference internal" href="_modules/backend/commons/services/data_frame_helper.html#DataFrameHelper.get_workspace_id"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#backend.commons.services.data_frame_helper.DataFrameHelper.get_workspace_id" title="Permalink to this definition"></a></dt>
+<dd><p>Function for getting the id of the workspace.
+:return: id as str.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="backend.commons.services.data_frame_helper.DataFrameHelper.index_sourcedata">
+<span class="sig-name descname"><span class="pre">index_sourcedata</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">df</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">DataFrame</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">None</span></span></span><a class="reference internal" href="_modules/backend/commons/services/data_frame_helper.html#DataFrameHelper.index_sourcedata"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#backend.commons.services.data_frame_helper.DataFrameHelper.index_sourcedata" title="Permalink to this definition"></a></dt>
+<dd><p>Function to index the source data to the elasticsearch index.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>df</strong> – the source data as dataframe.</p>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>None.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="backend.commons.services.data_frame_helper.DataFrameHelper.init_spark_session">
+<span class="sig-name descname"><span class="pre">init_spark_session</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">session_id</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">hive</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/backend/commons/services/data_frame_helper.html#DataFrameHelper.init_spark_session"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#backend.commons.services.data_frame_helper.DataFrameHelper.init_spark_session" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="backend.commons.services.data_frame_helper.DataFrameHelper.profiling">
+<span class="sig-name descname"><span class="pre">profiling</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">df</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">DataFrame</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">version</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">None</span></span></span><a class="reference internal" href="_modules/backend/commons/services/data_frame_helper.html#DataFrameHelper.profiling"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#backend.commons.services.data_frame_helper.DataFrameHelper.profiling" title="Permalink to this definition"></a></dt>
+<dd><p>Function for the profiling of source data.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><p>None.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="backend.commons.services.data_frame_helper.DataFrameHelper.recusive_profiling">
+<span class="sig-name descname"><span class="pre">recusive_profiling</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">result</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">attributes</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">prefix</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">version</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">None</span></span></span><a class="reference internal" href="_modules/backend/commons/services/data_frame_helper.html#DataFrameHelper.recusive_profiling"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#backend.commons.services.data_frame_helper.DataFrameHelper.recusive_profiling" title="Permalink to this definition"></a></dt>
+<dd><p>Function for the mapping of the profiling results to the attributes.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>result</strong> – results form the profiling.</p></li>
+<li><p><strong>attributes</strong> – all attributes of the current iteration level.</p></li>
+<li><p><strong>prefix</strong> – the prefix that is build automatically doing the recusive calls.</p></li>
+<li><p><strong>version</strong> – the current version of the schema.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>None.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="backend.commons.services.data_frame_helper.DataFrameHelper.recusive_schema">
+<span class="sig-name descname"><span class="pre">recusive_schema</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">fields</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">last_attribute_or_entity</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">id_column</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">is_update</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">bool</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">prefix</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">has_lineage</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">bool</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">lineage</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">None</span></span></span><a class="reference internal" href="_modules/backend/commons/services/data_frame_helper.html#DataFrameHelper.recusive_schema"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#backend.commons.services.data_frame_helper.DataFrameHelper.recusive_schema" title="Permalink to this definition"></a></dt>
+<dd><p>Recusive function to extract the schema of semistructured data.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>fields</strong> – all fields on the current level of iteration in the schema.</p></li>
+<li><p><strong>last_attribute_or_entity</strong> – last entity or attribute for connecting.</p></li>
+<li><p><strong>id_column</strong> – name of the attribute that is the primary key.</p></li>
+<li><p><strong>is_update</strong> – -.</p></li>
+<li><p><strong>prefix</strong> – the prefix that is automatically generated every recusive call.</p></li>
+<li><p><strong>has_lineage</strong> – defines whether the dataset has lineage informations or not.</p></li>
+<li><p><strong>lineage</strong> – list of lineage elements if the dataset has lineage informations.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>None.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="backend.commons.services.data_frame_helper.DataFrameHelper.remove_sourcedata_from_index">
+<span class="sig-name descname"><span class="pre">remove_sourcedata_from_index</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">None</span></span></span><a class="reference internal" href="_modules/backend/commons/services/data_frame_helper.html#DataFrameHelper.remove_sourcedata_from_index"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#backend.commons.services.data_frame_helper.DataFrameHelper.remove_sourcedata_from_index" title="Permalink to this definition"></a></dt>
+<dd><p>Function to remove the source data from the elasticsearch index.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><p>None.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="backend.commons.services.data_frame_helper.DataFrameHelper.revision">
+<span class="sig-name descname"><span class="pre">revision</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">None</span></em><a class="headerlink" href="#backend.commons.services.data_frame_helper.DataFrameHelper.revision" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="backend.commons.services.data_frame_helper.DataFrameHelper.settings">
+<span class="sig-name descname"><span class="pre">settings</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">None</span></em><a class="headerlink" href="#backend.commons.services.data_frame_helper.DataFrameHelper.settings" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="backend.commons.services.data_frame_helper.DataFrameHelper.spark_session">
+<span class="sig-name descname"><span class="pre">spark_session</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">None</span></em><a class="headerlink" href="#backend.commons.services.data_frame_helper.DataFrameHelper.spark_session" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="backend.commons.services.data_frame_helper.DataFrameHelper.start_exctracting_schema">
+<span class="sig-name descname"><span class="pre">start_exctracting_schema</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">None</span></span></span><a class="reference internal" href="_modules/backend/commons/services/data_frame_helper.html#DataFrameHelper.start_exctracting_schema"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#backend.commons.services.data_frame_helper.DataFrameHelper.start_exctracting_schema" title="Permalink to this definition"></a></dt>
+<dd><p>Function to start the schema extraction.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><p>None.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="backend.commons.services.data_frame_helper.DataFrameHelper.start_indexing_sourcedata">
+<span class="sig-name descname"><span class="pre">start_indexing_sourcedata</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">None</span></span></span><a class="reference internal" href="_modules/backend/commons/services/data_frame_helper.html#DataFrameHelper.start_indexing_sourcedata"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#backend.commons.services.data_frame_helper.DataFrameHelper.start_indexing_sourcedata" title="Permalink to this definition"></a></dt>
+<dd><p>Function to start the indexing of the source data to the elasticsearch index.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><p>None.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="backend.commons.services.data_frame_helper.DataFrameHelper.start_profiling">
+<span class="sig-name descname"><span class="pre">start_profiling</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">version</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">None</span></span></span><a class="reference internal" href="_modules/backend/commons/services/data_frame_helper.html#DataFrameHelper.start_profiling"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#backend.commons.services.data_frame_helper.DataFrameHelper.start_profiling" title="Permalink to this definition"></a></dt>
+<dd><p>Function to start the profiling for the source data.
+:return: None.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="backend.commons.services.data_frame_helper.DataFrameHelper.workspace_id">
+<span class="sig-name descname"><span class="pre">workspace_id</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">None</span></em><a class="headerlink" href="#backend.commons.services.data_frame_helper.DataFrameHelper.workspace_id" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</section>
+<section id="module-backend.commons.services">
+<span id="module-contents"></span><h2>Module contents<a class="headerlink" href="#module-backend.commons.services" title="Permalink to this heading"></a></h2>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2023, Alp.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>
